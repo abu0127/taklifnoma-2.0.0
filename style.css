@@ -1,0 +1,123 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Yuqoridagi rasm */
+.header-image {
+    width: 100vw;
+    height: 200px;
+    background: url('./pexels-filiamariss-12124347.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+.content {
+    padding-top: 60px;
+    position: relative;
+    z-index: 1;
+    margin-top: 850px;
+    height: 600px;
+    box-shadow: 0 -40px 60px 50px #FFFDF8;
+    background: #FFFDF8;
+    transition: all .7s ease-out;
+}
+
+.cover {
+    position: absolute;
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: #FFFDF8;
+}
+
+.greating-sections {
+    margin: 0 auto;
+}
+
+.greating,
+.greating2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+}
+
+.txt_aninamtion_1 {
+    animation: txt1 3.5s ease-out forwards;
+}
+
+@keyframes txt1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 1000px;
+    }
+}
+
+.great-1,
+.great-2 {
+
+    font-size: 30px;
+}
+
+.greating2 {
+    margin-block-end: 100px;
+    border: 1px solid;
+}
+
+.names {
+    position: relative;
+    margin-top: 150px;
+    border: 1px solid;
+    height: 150px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.names .name1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.names .name2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.names span,
+.name2 span {
+    font-size: 50px;
+}
+
+
+.content-2 {
+    height: 100vh;
+    z-index: 1;
+
+}
+
+.set {
+    background: #CFB055;
+}
