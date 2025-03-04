@@ -5,9 +5,9 @@ function main() {
     const main = document
         .querySelector('.content');
     const txt_1 = document
-        .querySelector('.greating span');
+        .querySelector('.greating .cover');
     const txt_2 = document
-        .querySelector('.greating2 span');
+        .querySelector('.greating2 .cover');
     const txt_3 = document
         .querySelector('.names .cover');
 
@@ -25,19 +25,7 @@ function main() {
 
     window.addEventListener("scroll", function () {
         let scrollpos = window.scrollY;
-        let header = document.querySelector(".header-image");
-
-        let maxScroll = 400;
-        let opacity = 1 - (scrollY / maxScroll);
-        let height = 400 - scrollY;
-
-        if (scrollY < maxScroll) {
-            header.style.opacity = opacity;
-            header.style.height = height + "px";
-        } else {
-            header.style.opacity = 0;
-            header.style.height = "0px";
-        }
+      
 
         contents.forEach((content, index) => {
             let contentTop = content.offsetTop - 250;
