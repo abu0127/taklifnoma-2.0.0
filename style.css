@@ -125,7 +125,7 @@
     font-size: var(--titles-size);
     user-select: none;
     color: var(--titles-colors);
-    overflow: visible;
+    letter-spacing: 0.05em;
 }
 .description-2{
     position: relative;
