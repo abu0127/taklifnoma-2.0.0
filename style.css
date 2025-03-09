@@ -10,14 +10,18 @@
 * {
     margin: 0;
     padding: 0;
-   
     overflow-x: hidden;
     box-sizing: border-box;
     font-style: italic;
-    text-shadow: 2px 2px 3px;
+    text-shadow: 2px 2px 3px #919191;
 }
-
-
+:root{
+    --titles-font:'Friends';
+    --titles-colors: #ba8d23;
+    --titles-size: 55px;
+    --desciription-color: #6a6a6a;
+    --desciription-size: 19px;
+}
 .container {
     z-index: 1;
     max-width: 550px;
@@ -39,7 +43,6 @@
 
 }
 
-
 .content {
     margin-top: 600px ;
     padding-top: 60px;
@@ -50,114 +53,84 @@
     transition: all 1s ease-out;
 }
 
-.cover {
-    position: absolute;
-    display: block;
-    width: inherit;
-    height: inherit;
-    background: #FFFDF8;
-    
-
-}
-
-.greating-sections {
-    margin: 0 auto;
-}
-
-.greating,
-.greating2 {
+.first-txt{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 150px;
+    font-family:var(--titles-font) ;
+    font-size: var(--titles-size);
+    user-select: none;
+    color: var(--titles-colors);
+}
+.first-txt p{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+
+}
+.description{
+    padding: 10px;
+    margin: 10px 0;
     width: 100%;
-   
-   font-family: 'Friends', Arial, sans-serif;
 }
-.greating{
-    height: 200px;
-}
-.greating2 {
-    margin-block-end: 100px;
-    height: 90px;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-  
-}
-
-
-.txt_aninamtion_1 {
-    animation: txt1 3.5s ease-out forwards;
-}
-
-@keyframes txt1 {
-    0% {
-        left: 0;
-    }
-
-    100% {
-        left: 1000px;
-    }
-}
-
-.great-1{
-    
-    padding: 15px;
-    font-size: 66px;
-   
-}
-.great-2 {
-    border: 1px solid;
-    font-size: 18px;
-   
-    
-}
-
-
-.names {
-    position: relative;
-    margin-top: 150px;
-    
-    width: 300px;
+.description p,.description-2 p{
+    width: 90%; 
     margin: 0 auto;
-    height: 240px;
-   
-
-}
- ::-webkit-scrollbar{
-        display: none;
-    }
-.names .name1 {
-    top: 2px;
-    position: absolute;
-    z-index: 1;
-    font-size: 40px;
-    padding: 0 10px;
-
+    color: var(--desciription-color);
+    font-size: var(--desciription-size);
 }
 
-.names .name2 {
-    position: absolute;
-    bottom: 2px;
-    padding: 0 10px;
-    font-size: 40px;
-    right: 0;
+.target-day p{
+    width: 90%; 
+    margin: 0 auto;
+    padding: 10px;
+    color: var(--titles-colors);
+    font-size: 25px;
     
 }
 
-.names span,
-.name2 span {
-    font-size: 70px;
+
+.content-2{
+    height: 60dvh;
+    
 }
-
-
-.content-2 {
-    height: 100vh;
+.profel{
+    position: relative;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--titles-colors);
+    background: url("./pexels-seyda-nur-yuce-70589496-19314463.jpg");
+    background-size: cover;
+    box-shadow: 3px 3px 10px 1px rgb(135, 135, 135);
+    opacity: 0;
     z-index: 1;
-    background: red;
 
 }
+@keyframes img { 100%{opacity: 1; left: 50%;}}
 
-.set {
-    background: #CFB055;
+.profel-animated{ animation: img 1.3s ease-in forwards;}
+.name{
+    position: relative;
+    top: 20%;
+    height: 120px;
+    
 }
+.name p{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    font-family:var(--titles-font) ;
+    font-size: var(--titles-size);
+    user-select: none;
+    color: var(--titles-colors);
+    
+}
+.description-2{
+    position: relative;
+    top: 30%;
+}
+
