@@ -2,11 +2,12 @@ function main() {
     const firstText = 'Assalomu aleykum';
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ad.'
     const targetDay = '1 chi fevral kuni soat 19:00';
-    const names = 'Simon riley and Sofia'
+    const names = 'Jhon and Sofia'
 
     const contents = document.querySelectorAll('.section');
     const main = document.querySelector('.content');
     const profel = document.querySelector('.profel');
+    const nav = document.querySelector('.nav-bar a');
 
     // text animation function
     function writeTxt(txt, target, time) {
@@ -25,15 +26,15 @@ function main() {
     }
 
     //animations
-    setTimeout(() => main.style.marginTop = '400px', 100);
+    setTimeout(() => main.style.marginTop = '350px', 100);
     // writing first text with animation
     setTimeout(() => writeTxt(firstText, '.first-txt p', 30), 800);
     // first desciription animation
     setTimeout(() => writeTxt(description, '.description p', 20), 1800);
     setTimeout(() => writeTxt(targetDay, '.target-day p', 20), 4000);
+    setTimeout(() => nav.classList.add('target-animation'), 4500);
 
-
-let cout = true;
+    let cout = true;
 
     window.addEventListener("scroll", function () {
         let scrollpos = window.scrollY;
@@ -41,15 +42,16 @@ let cout = true;
         contents.forEach((content, index) => {
             let contentTop = content.offsetTop - 400;
             let contentHeight = content.offsetHeight;
-            
+
             if (scrollpos >= contentTop && scrollpos < contentTop + contentHeight) {
 
+                
                 if (index === 1 && cout) {
 
-                   profel.classList.add('profel-animated')
-                   setTimeout(() => writeTxt(names, '.name p', 30), 800);
-                   setTimeout(() => writeTxt(description, '.description-2 p', 20), 1400);
-                   cout = false
+                    profel.classList.add('profel-animated')
+                    setTimeout(() => writeTxt(names, '.name p', 30), 800);
+                    setTimeout(() => writeTxt(description, '.description-2 p', 20), 1400);
+                    cout = false
                 }
 
             }
