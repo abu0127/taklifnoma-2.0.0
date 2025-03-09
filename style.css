@@ -51,7 +51,6 @@
     margin-top: 600px ;
     padding-top: 60px;
     z-index: 1;
-   
     box-shadow: 0 -40px 60px 50px #FFFDF8;
     background: #FFFDF8;
     transition: all 1s ease-out;
@@ -72,7 +71,10 @@
    text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-   
+   padding: 20px;
+}
+.first-txt p span{
+    padding: 20px 0;
 }
 .description{
     padding: 10px;
@@ -98,7 +100,7 @@
 
 
 .content-2{
-    height: 70dvh;
+    height: 100dvh;
     
 }
 .profel{
@@ -123,7 +125,7 @@
 .profel-animated{ animation: img 1s ease-in forwards;}
 .name{
     position: relative;
-    top: 20%;
+    top: 25%;
 }
 .name p{
     text-align: center;
@@ -135,7 +137,10 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-   
+    padding: 20px;
+}
+.name p span{
+    padding: 20px 0;
 }
 .description-2{
     position: relative;
