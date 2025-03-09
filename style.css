@@ -47,7 +47,7 @@
     margin-top: 600px ;
     padding-top: 60px;
     z-index: 1;
-    height: 100vh;
+   
     box-shadow: 0 -40px 60px 50px #FFFDF8;
     background: #FFFDF8;
     transition: all 1s ease-out;
@@ -63,7 +63,7 @@
 }
 .first-txt p{
    text-align: center;
-   padding: 20px;
+   height: inherit;
 
 }
 .description{
@@ -120,7 +120,7 @@
 }
 .name p{
     text-align: center;
-    padding: 10px;
+    height: inherit;
     font-family:var(--titles-font) ;
     font-size: var(--titles-size);
     user-select: none;
