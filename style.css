@@ -80,6 +80,7 @@
     width: 100%;
 }
 .description p,.description-2 p{
+    text-align: center;
     width: 90%; 
     margin: 0 auto;
     color: var(--desciription-color);
@@ -92,7 +93,7 @@
     padding: 10px;
     color: var(--titles-colors);
     font-size: 25px;
-    
+    text-align: center;
 }
 
 
