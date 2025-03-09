@@ -55,16 +55,15 @@
 
 .first-txt{
     position: relative;
-    height: 150px;
+    height: 160px;
     font-family:var(--titles-font) ;
     font-size: var(--titles-size);
     user-select: none;
     color: var(--titles-colors);
 }
 .first-txt p{
-    justify-self: center;
-    align-self: center;
-    padding: 10px;
+   text-align: center;
+   padding: 20px;
 
 }
 .description{
