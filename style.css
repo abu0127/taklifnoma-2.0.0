@@ -60,11 +60,13 @@
     font-size: var(--titles-size);
     user-select: none;
     color: var(--titles-colors);
+    
 }
 .first-txt p{
    text-align: center;
    height: inherit;
-
+   letter-spacing: 0.05em;
+   line-height: .5em;
 }
 .description{
     padding: 10px;
@@ -126,6 +128,7 @@
     user-select: none;
     color: var(--titles-colors);
     letter-spacing: 0.05em;
+    line-height: .5em;
 }
 .description-2{
     position: relative;
