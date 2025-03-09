@@ -65,8 +65,7 @@
 .first-txt p{
    text-align: center;
    height: inherit;
-   letter-spacing: 0.05em;
-   line-height: .5em;
+   
 }
 .description{
     padding: 10px;
@@ -113,22 +112,21 @@
 }
 @keyframes img { 100%{opacity: 1; left: 50%;}}
 
-.profel-animated{ animation: img 1.3s ease-in forwards;}
+.profel-animated{ animation: img 1s ease-in forwards;}
 .name{
     position: relative;
     top: 20%;
-    height: 160px;
-    
 }
 .name p{
     text-align: center;
-    height: inherit;
+    height: 160px;
     font-family:var(--titles-font) ;
     font-size: var(--titles-size);
     user-select: none;
     color: var(--titles-colors);
-    letter-spacing: 0.05em;
-    line-height: .5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
 }
 .description-2{
     position: relative;

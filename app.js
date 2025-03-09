@@ -32,20 +32,24 @@ function main() {
     setTimeout(() => writeTxt(description, '.description p', 20), 1800);
     setTimeout(() => writeTxt(targetDay, '.target-day p', 20), 4000);
 
+
+let cout = true;
+
     window.addEventListener("scroll", function () {
         let scrollpos = window.scrollY;
-
 
         contents.forEach((content, index) => {
             let contentTop = content.offsetTop - 400;
             let contentHeight = content.offsetHeight;
-
+            
             if (scrollpos >= contentTop && scrollpos < contentTop + contentHeight) {
 
-                if (index === 1) {
+                if (index === 1 && cout) {
+
                    profel.classList.add('profel-animated')
                    setTimeout(() => writeTxt(names, '.name p', 30), 800);
                    setTimeout(() => writeTxt(description, '.description-2 p', 20), 1400);
+                   cout = false
                 }
 
             }
