@@ -89,7 +89,7 @@
 
 
 .content-2{
-    height: 60dvh;
+    height: 70dvh;
     
 }
 .profel{
@@ -115,12 +115,11 @@
 .name{
     position: relative;
     top: 20%;
-    height: 120px;
+    height: 160px;
     
 }
 .name p{
-    justify-self: center;
-    align-self: center;
+    text-align: center;
     padding: 10px;
     font-family:var(--titles-font) ;
     font-size: var(--titles-size);
