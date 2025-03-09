@@ -161,7 +161,7 @@
     box-shadow: 3px 3px 10px 1px rgb(135, 135, 135);
     opacity: 0;
     z-index: 1;
-
+    transition: all 1s ease;
 }
 
 @keyframes img {

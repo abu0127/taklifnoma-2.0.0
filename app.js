@@ -57,8 +57,17 @@ function main() {
             }
         })
 
-
-
+        profel.style.borderRadius = "50%";
+        profel.style.width = '150px';
+        profel.style.height = '150px';
+        profel.style.border = '5px solid var(--titles-colors)'
     });
-    console.log(contents)
+    
+    profel.addEventListener('click',()=>{
+        profel.style.borderRadius = '5px';
+        profel.style.width = '300px';
+        profel.style.height = '300px';
+        profel.style.boxShadow = '0px 7px 15px  rgb(135, 135, 135)'
+        profel.style.border = 'none'
+    })
 }
