@@ -31,7 +31,7 @@ function main() {
     }
 
     //animations
-    setTimeout(() => main.style.marginTop = '350px', 100);
+    setTimeout(() => main.style.marginTop = '300px', 100);
     // writing first text with animation
     setTimeout(() => writeTxt(firstText, '.first-txt p', 30), 800);
     // first desciription animation
