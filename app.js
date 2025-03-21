@@ -1,6 +1,6 @@
 function main() {
     const firstText = 'Assalomu aleykum';
-    const description = 'Hurmatli aziz menmon sizni nikoh to\'yimiz munosabati bilan bo\'lib o\'tadigan << Visol Oqshomi >> ga taklif etamiz. '
+    const description =  "Hurmatli qadrli insonim sizni bo'lib o'tadigan visol oqshomimiga lutfan taklif etamiz"
     // const targetDay = '1 chi fevral kuni soat 19:00';
     const names = 'Asadbek  & Zilolaxon'
 
