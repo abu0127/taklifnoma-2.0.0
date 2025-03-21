@@ -26,7 +26,7 @@
     --titles-colors: #ba8d23;
     --titles-size: 65px;
     --desciription-color: #6a6a6a;
-    --desciription-size: 19px;
+    --desciription-size: 23px;
 }
 
 .container {
@@ -52,7 +52,7 @@
 
 .content {
     margin-top: 600px;
-    padding-top: 60px;
+    padding-top: 0px;
     z-index: 1;
     box-shadow: 0 -40px 60px 50px #FFFDF8;
     background: #FFFDF8;
@@ -61,8 +61,9 @@
 }
 
 .first-txt {
+    
     position: relative;
-    height: 190px;
+    height: 150px;
     font-family: var(--titles-font);
     font-size: var(--titles-size);
     user-select: none;
@@ -84,7 +85,7 @@
 }
 
 .description {
-    padding: 10px;
+
     margin: 10px 0;
     width: 100%;
 }
@@ -102,7 +103,7 @@
 .target-day{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 .target-day p {
     width: 100%;
@@ -114,11 +115,24 @@
     
     
 }
+.target-day .mothAnd{
+    border-left:2px solid #ba8d23 ;
+    padding-left: 10px;
+}
 .target-day .mothAnd div{
     font-size: 25px;
     font-weight: 900;
     font-family: serif;
     color: #ba8d23;
+
+}
+
+.target{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color:#6a6a6a;
+    margin-bottom: 20px;
 }
 
 .nav-bar {

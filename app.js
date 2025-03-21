@@ -1,8 +1,13 @@
 function main() {
-    const firstText = 'Assalomu aleykum';
+    const firstText = 'Assalomu   aleykum';
     const description =  "Hurmatli qadrli insonim sizni bo'lib o'tadigan visol oqshomimiga lutfan taklif etamiz"
-    // const targetDay = '1 chi fevral kuni soat 19:00';
+    const targetDay = '02';
+    const month ="Aprel"
+    const year = "2025 yil"
+    const hour = '18:00 soat'
     const names = 'Asadbek  & Zilolaxon'
+    const targetTitl = "Manzil  << OSIYO >>  tantanalar saroyi"
+    const description2 = "Baxtli kunumizda biz bilan birga bo'ling. "
 
     const contents = document.querySelectorAll('.section');
     const main = document.querySelector('.content');
@@ -32,7 +37,13 @@ function main() {
     // first desciription animation
     setTimeout(() => writeTxt(description, '.description p', 20), 1800);
     setTimeout(() => writeTxt(targetDay, '.target-day p', 20), 4000);
-    setTimeout(() => nav.classList.add('target-animation'), 4500);
+    setTimeout(() => writeTxt(month, '.target-day .mothAnd .mot', 50), 4500);
+    setTimeout(() => writeTxt(year, '.target-day .mothAnd .year', 50), 5000);
+    setTimeout(() => writeTxt(hour, '.target-day .mothAnd .hour', 50), 5500);
+    setTimeout(() => writeTxt(targetTitl, '.target', 50), 6500);
+    
+
+    setTimeout(() => nav.classList.add('target-animation'), 7500);
 
     let cout = true;
 
@@ -50,7 +61,7 @@ function main() {
 
                     profel.classList.add('profel-animated')
                     setTimeout(() => writeTxt(names, '.name p', 30), 800);
-                    setTimeout(() => writeTxt(description, '.description-2 p', 20), 1400);
+                    setTimeout(() => writeTxt(description2, '.description-2 p', 20), 1400);
                     cout = false
                 }
 
