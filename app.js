@@ -1,6 +1,6 @@
 function main() {
     const firstText = 'Assalomu   aleykum';
-    const description =  "Hurmatli qadrli insonim sizni bo'lib o'tadigan visol oqshomimiga lutfan taklif etamiz"
+    const description =  "Hurmatli qadrli insonim sizni bo'lib o'tadigan visol oqshomimizga lutfan taklif etamiz"
     const targetDay = '02';
     const month ="Aprel"
     const year = "2025 yil"
