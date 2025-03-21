@@ -1,8 +1,8 @@
 function main() {
     const firstText = 'Assalomu aleykum';
-    const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, ad.'
-    const targetDay = '1 chi fevral kuni soat 19:00';
-    const names = 'Jhon and Sofia'
+    const description = 'Hurmatli aziz menmon sizni nikoh to\'yimiz munosabati bilan bo\'lib o\'tadigan << Visol Oqshomi >> ga taklif etamiz. '
+    // const targetDay = '1 chi fevral kuni soat 19:00';
+    const names = 'Asadbek  & Zilolaxon'
 
     const contents = document.querySelectorAll('.section');
     const main = document.querySelector('.content');

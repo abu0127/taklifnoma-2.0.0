@@ -91,6 +91,7 @@
 
 .description p,
 .description-2 p {
+    font-weight: 700;
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -98,13 +99,26 @@
     font-size: var(--desciription-size);
 }
 
+.target-day{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px 0;
+}
 .target-day p {
-    width: 90%;
+    width: 100%;
+    padding-right: 10px;
     margin: 0 auto;
-    padding: 10px;
     color: var(--titles-colors);
+    font-size: 90px;
+    text-align: end;
+    
+    
+}
+.target-day .mothAnd div{
     font-size: 25px;
-    text-align: center;
+    font-weight: 900;
+    font-family: serif;
+    color: #ba8d23;
 }
 
 .nav-bar {
@@ -149,7 +163,7 @@
 .profel {
     position: relative;
     left: 30%;
-    top: 20%;
+    top: 30%;
     transform: translate(-50%, -50%);
     height: 150px;
     width: 150px;
